@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      url : mongodb+srv://manupranav62:Fq7ZA8843bSAmGWE@cluster0.n3sjrnz.mongodb.net/?retryWrites=true&w=majority
+      database: Student
