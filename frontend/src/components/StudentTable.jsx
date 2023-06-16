@@ -15,6 +15,7 @@ const StudentTable = ({ students }) => {
             <th scope="col" className="px-6 py-3">
               Name
             </th>
+            <th className="px-6 py-3">Admission No</th>
             <th className="px-6 py-3">Date of Birth</th>
             <th className="px-6 py-3">Class</th>
             <th className="px-6 py-3">Division</th>
@@ -31,6 +32,7 @@ const StudentTable = ({ students }) => {
                 >
                   {student.name}
                 </th>
+                <td className="px-6 py-4">{student.admissionNum}</td>
                 <td className="px-6 py-4">{student.dob}</td>
                 <td className="px-6 py-4">{student.standard}</td>
                 <td className="px-6 py-4">{student.division}</td>
