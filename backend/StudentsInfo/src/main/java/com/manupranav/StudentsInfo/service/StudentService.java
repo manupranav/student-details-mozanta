@@ -20,11 +20,11 @@ public class StudentService {
 
         int nextSequenceNumber = 1;
         if (!allStudents.isEmpty()) {
-            String sequenceNumberString = allStudents.get(0).getAdmissionNum().substring(2);
+            String sequenceNumberString = allStudents.get(0).getAdmissionNum().substring(2); // get the numeric value of the admission no
             nextSequenceNumber = Integer.parseInt(sequenceNumberString) + 1;
 
         }
-        String studentId = "R-" + String.format("%03d", nextSequenceNumber);
+        String studentId = "R-" + String.format("%03d", nextSequenceNumber); //generate admission in R-001, R-002 etc format
         student.setAdmissionNum(studentId);
         return repository.save(student);
     }

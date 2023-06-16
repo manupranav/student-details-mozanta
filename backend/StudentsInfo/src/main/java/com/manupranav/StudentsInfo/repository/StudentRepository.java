@@ -9,5 +9,5 @@ import java.util.Optional;
 public interface StudentRepository extends MongoRepository<Student, String> {
 
     @Query(value = "{}", sort = "{ 'admissionNumber' : -1 }", fields = "{ 'admissionNumber': 1 }")
-    Optional<String> getAdmissionNumber();
+    Optional<String> getAdmissionNumber(); // gets the last admission number
 }
