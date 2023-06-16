@@ -1,6 +1,12 @@
 import React from "react";
 
 const StudentTable = ({ students }) => {
+  // Sort the students array by name in ascending order
+  const sortedStudents = [...students].sort((a, b) => {
+    const nameA = a.name.toLowerCase();
+    const nameB = b.name.toLowerCase();
+    return nameA < nameB ? -1 : 1;
+  });
   return (
     <div className="ml-20 shadow-md sm:rounded-lg">
       <table className="w-full text-sm text-left text-gray-500">
@@ -17,7 +23,7 @@ const StudentTable = ({ students }) => {
         </thead>
         {
           <tbody>
-            {students.map((student, index) => (
+            {sortedStudents.map((student, index) => (
               <tr className="bg-white border-b" key={index}>
                 <th
                   scope="row"
