@@ -81,12 +81,12 @@ $ npm start
 #Go to spring boot repository
 $ cd ../backend/StudentsInfo/
 
-#Open this folder in Intellij editor
+Open this folder in Intellij editor
 $ StudentsInfo
 
-#Navigate to StudentsInfoApplication.java
+Navigate to StudentsInfoApplication.java
 
-#Click on green color run button above
+Click on green color run button above
 
 Open this link in browser "http://127.0.0.1:3000"
 ```
